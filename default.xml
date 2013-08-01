@@ -25,6 +25,7 @@
   <project path="external/tinyalsa" name="external_tinyalsa" remote="android4sam" revision="refs/heads/android4sam_v4.0" groups="pdk" />
   <project path="external/skia" name="platform_external_skia" remote="android4sam" revision="refs/heads/android4sam_v4.0" />
   <project path="external/jpeg" name="platform_external_jpeg" remote="android4sam" revision="refs/heads/android4sam_v4.0" groups="pdk" />
+  <project path="external/svox" name="platform_external_svox" remote="android4sam" revision="refs/heads/android4sam_v4.0" groups="pdk" />
   <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="android4sam" revision="refs/heads/android4sam_v4.0" groups="pdk" />
  
   <project path="build" name="platform/build" groups="pdk" >
@@ -196,7 +197,6 @@
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/stressapptest" name="platform/external/stressapptest" />
-  <project path="external/svox" name="platform/external/svox" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
   <project path="external/tcpdump" name="platform/external/tcpdump" />
   <project path="external/tinyxml" name="platform/external/tinyxml" />
