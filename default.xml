@@ -11,22 +11,22 @@
            remote="aosp"
            sync-j="4" />
   
-  <project path="device/atmel" name="device_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.0" group="device" />
-  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="hardware/atmel/sama5d3" name="platform_hardware_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="hardware/realtek" name="platform_hardware_realtek" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="system/core" name="platform_system_core" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="external/tinyalsa" name="external_tinyalsa" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="external/skia" name="platform_external_skia" remote="android4sam" revision="refs/tags/Android4sam_v4.0" />
-  <project path="external/jpeg" name="platform_external_jpeg" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="external/svox" name="platform_external_svox" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="android4sam" revision="refs/tags/Android4sam_v4.0" groups="pdk" />
+  <project path="device/atmel" name="device_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.1" group="device" />
+  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="hardware/atmel/sama5d3" name="platform_hardware_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="hardware/realtek" name="platform_hardware_realtek" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="system/core" name="platform_system_core" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="external/skia" name="platform_external_skia" remote="android4sam" revision="refs/tags/Android4sam_v4.1" />
+  <project path="external/jpeg" name="platform_external_jpeg" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="external/svox" name="platform_external_svox" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="android4sam" revision="refs/tags/Android4sam_v4.1" groups="pdk" />
  
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
