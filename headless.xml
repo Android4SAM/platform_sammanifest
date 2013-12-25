@@ -11,7 +11,7 @@
            remote="aosp"
            sync-j="4" />
   
-  <project path="device/atmel" name="device_atmel" remote="android4sam" revision="refs/heads/Android4sam_v4.2_headless" group="device" />
+  <project path="device/atmel" name="device_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.2_headless" group="device" />
   <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
   <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
   <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
@@ -19,8 +19,8 @@
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
   <project path="hardware/realtek" name="platform_hardware_realtek" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="android4sam" revision="refs/heads/Android4sam_v4.2_headless" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="android4sam" revision="refs/heads/Android4sam_v4.2_headless" groups="pdk" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="android4sam" revision="refs/tags/Android4sam_v4.2_headless" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="android4sam" revision="refs/tags/Android4sam_v4.2_headless" groups="pdk" />
   <project path="system/core" name="platform_system_core" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
   <project path="external/tinyalsa" name="external_tinyalsa" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
   <project path="external/skia" name="platform_external_skia" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
