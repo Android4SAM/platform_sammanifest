@@ -11,24 +11,24 @@
            remote="aosp"
            sync-j="4" />
   
-  <project path="device/atmel" name="device_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.2" group="device" />
-  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="packages/apps/LegacyCamera" name="platform_packages_apps_LegacyCamera" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="packages/apps/SoundRecorder" name="platform_packages_apps_SoundRecorder" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="hardware/atmel/sama5d3" name="platform_hardware_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="hardware/realtek" name="platform_hardware_realtek" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="system/core" name="platform_system_core" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="external/tinyalsa" name="external_tinyalsa" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="external/skia" name="platform_external_skia" remote="android4sam" revision="refs/tags/Android4sam_v4.2" />
-  <project path="external/jpeg" name="platform_external_jpeg" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="external/svox" name="platform_external_svox" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="android4sam" revision="refs/tags/Android4sam_v4.2" groups="pdk" />
+  <project path="device/atmel" name="device_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.3" group="device" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="packages/apps/LegacyCamera" name="platform_packages_apps_LegacyCamera" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="hardware/atmel/sama5d3" name="platform_hardware_atmel" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="hardware/realtek" name="platform_hardware_realtek" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="system/core" name="platform_system_core" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="external/skia" name="platform_external_skia" remote="android4sam" revision="refs/tags/Android4sam_v4.3" />
+  <project path="external/jpeg" name="platform_external_jpeg" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="external/svox" name="platform_external_svox" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="android4sam" revision="refs/tags/Android4sam_v4.3" groups="pdk" />
  
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -37,7 +37,6 @@
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
@@ -277,6 +276,7 @@
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
