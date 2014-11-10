@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/" />
 
   <remote  name="Android4SAM"
-           fetch="git://github.com/Android4SAM" />
+           fetch="https://github.com/Android4SAM" />
 
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
