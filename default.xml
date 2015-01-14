@@ -11,24 +11,25 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="device/atmel" name="device_atmel" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" groups="device,atmel" />
-  <project path="hardware/atmel" name="platform_hardware_atmel" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" groups="atmel" />
-  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="hardware/realtek" name="platform_hardware_realtek" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="system/core" name="platform_system_core" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="external/jpeg" name="platform_external_jpeg" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="external/skia" name="platform_external_skia" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="external/tinyalsa" name="external_tinyalsa" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="external/bluetooth/bluedroid" name="platform_external_bluetooth_bluedroid" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" groups="pdk" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
-  <project path="packages/apps/LegacyCamera" name="platform_packages_apps_LegacyCamera" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4_rc2" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" groups="pdk" />
+  <project path="device/atmel" name="device_atmel" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" groups="device,atmel" />
+  <project path="hardware/atmel" name="platform_hardware_atmel" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" groups="atmel" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="hardware/realtek" name="platform_hardware_realtek" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="system/core" name="platform_system_core" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="external/jpeg" name="platform_external_jpeg" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="external/skia" name="platform_external_skia" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="external/bluetooth/bluedroid" name="platform_external_bluetooth_bluedroid" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" groups="pdk" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
+  <project path="packages/apps/LegacyCamera" name="platform_packages_apps_LegacyCamera" remote="Android4SAM" revision="refs/tags/Android4sam_v4.4" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -38,7 +39,6 @@
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="developers/build" name="platform/developers/build" />
@@ -428,7 +428,7 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
-  <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
+  <project path="tools/base" name="platform/tools/base" groups="tools" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
@@ -436,6 +436,6 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
-  <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="tools/swt" name="platform/tools/swt" groups="tools" />
 
 </manifest>
