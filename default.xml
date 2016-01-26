@@ -2,10 +2,27 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/platform/" />
+  <remote name="github"
+           fetch="https://github.com/Android4SAM/" />
+  <remote name="linaro"
+           fetch="https://git.linaro.org/people/benjamin.gaignard/" />
   <default revision="refs/tags/android-4.4w_r1"
            remote="aosp"
            sync-j="4" />
+  <project path="device/atmel" name="device_atmel" remote="github" revision="android4sam_v4.4w_r1" groups="device,atmel" />
+  <project path="hardware/atmel" name="platform_hardware_atmel" remote="github" revision="android4sam_v4.4w_r1" groups="atmel" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="github" revision="android4sam_v4.4w_r1" groups="atmel" />
+  <project path="packages/apps/Calibrate" name="platform_packages_apps_Calibrate" remote="github" revision="android4sam_v4.4w_r1" />
+  <project path="packages/apps/Ethernet" name="platform_packages_apps_Ethernet" remote="github" revision="android4sam_v4.4w_r1" />
+  <project path="packages/apps/AtmelLogo" name="platform_packages_apps_AtmelLogo" remote="github" revision="android4sam_v4.4w_r1" />
+  <project path="packages/apps/LegacyCamera" name="platform_packages_apps_LegacyCamera" remote="github" revision="android4sam_v4.4w_r1" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="github" revision="android4sam_v4.4w_r1" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="github" revision="android4sam_v4.4w_r1" groups="pdk" />
+  <project path="external/jpeg" name="platform_external_jpeg" remote="github" revision="android4sam_v4.4w_r1" groups="pdk" />
+  <project path="external/skia" name="platform_external_skia" remote="github" revision="android4sam_v4.4w_r1" groups="pdk" />
+  <project path="external/drm" name="libdrm" remote="linaro" revision="android-4.4.3" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="github" revision="android4sam_v4.4w_r1" groups="pdk" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -106,7 +123,6 @@
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
   <project path="external/eigen" name="platform/external/eigen" />
-  <project path="external/elfutils" name="platform/external/elfutils" />
   <project path="external/embunit" name="platform/external/embunit" />
   <project path="external/emma" name="platform/external/emma" />
   <project path="external/esd" name="platform/external/esd" />
@@ -141,7 +157,6 @@
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jmdns" name="platform/external/jmdns" />
   <project path="external/jmonkeyengine" name="platform/external/jmonkeyengine" />
-  <project path="external/jpeg" name="platform/external/jpeg" groups="pdk" />
   <project path="external/jsilver" name="platform/external/jsilver" />
   <project path="external/jsr305" name="platform/external/jsr305" />
   <project path="external/junit" name="platform/external/junit" />
@@ -174,7 +189,6 @@
   <project path="external/libxml2" name="platform/external/libxml2" />
   <project path="external/libxslt" name="platform/external/libxslt" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv" />
-  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
   <project path="external/littlemock" name="platform/external/littlemock" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/lzma" name="platform/external/lzma" />
@@ -219,7 +233,6 @@
   <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" />
-  <project path="external/skia" name="platform/external/skia" />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -235,7 +248,6 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" />
   <project path="external/tcpdump" name="platform/external/tcpdump" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -244,7 +256,6 @@
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
   <project path="external/xdelta3" name="platform/external/xdelta3" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
@@ -252,7 +263,6 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -285,7 +295,6 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
@@ -326,7 +335,6 @@
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
-  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
