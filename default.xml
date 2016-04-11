@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/platform/" />
+           fetch="https://android.googlesource.com/" />
   <remote name="github"
            fetch="https://github.com/Android4SAM/" />
   <remote name="linaro"
